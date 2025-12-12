@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-tercearia: #22d4fd;
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --cor-hover: #272727;
+}
+
+/* Zerando os padrões da página, de margem, borda e conteúdo: */
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+/* Mudando as cores de fundo da página e cor principal das letras: */
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+
+}
+/* Padding com 4 valores ordem: superior, direito, inferior, esquerdo: */
+.cabecalho{
+padding: 3% 0% 0% 27%;
+}
+
+.cabecalho-menu{
+  display: flex;
+  align-content: space-around;
+  gap: 80px;
+}
+
+.cabecalho-menu-link{
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--cor-tercearia);
+  text-decoration: none;
+
+}
+
+/* Para formatar a cor do texto dentro da tag <strong> usando a class */
+
+.apresentacao {
+  padding: 8% 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  
+}
+
+.apresentacao-conteudo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.apresentacao-conteudo-titulo{
+  font-size: 2.25rem;
+  font-family: var(--fonte-primaria);
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.titulo-destaque {
+  color: var(--cor-tercearia); /* Substitua #corDesejada pela cor que você quer */
+}
+.apresentacao-conteudo-texto {
+  font-size: 1.5rem;
+  font-family: var(--fonte-secundaria);
+  font-optical-sizing: auto;
+  font-style: normal;
+
+}
+
+.apresentacao-botoes{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.apresentacao-titulo-botoes {
+  font-family: var(--fonte-primaria);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.apresentacao-botoes-links{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  border: 2px solid var(--cor-tercearia);
+  width: 50%;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  padding: 20px 15px;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-secundaria);
+  font-optical-sizing: auto;
+  font-style: normal;
+  gap: 16px; 
+
+}
+
+.apresentacao-botoes-links:hover {
+  background-color: var(--cor-hover);
+
+}
+
+.apresentacao-botoes-links img {
+  
+  height: 100%;
+  object-fit: contain;
+  background-color: var(--cor-primaria);
+
+}
+
+.apresentacao-imagem{
+  width: 50%;
+}
+
+.rodape{
+  color: var(--cor-primaria);
+  background-color: var(--cor-tercearia);
+  padding: 20px;
+  text-align: center;
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px){
+  .cabecalho{
+    padding: 12% 
+  }
+
+  /* Não precisam do display flex pois já foi declarado antes no cabecalho-menu */
+  .cabecalho-menu {
+    justify-content: center;
+  }
+
+  .apresentacao{
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .apresentacao-conteudo {
+    width: auto;
+  }
+
+}
+
+
+
+/* Para ajustar o tamanho do texto do título 
+h1 {
+  font-size: 24px; /* Ajuste o valor para o tamanho desejado 
+}
+
+/* Para estilizar os links como botões
+a {
+  background-color: aqua; /* Cor de fundo do botão
+  color: whitesmoke; /* Cor do texto do botão 
+  padding: 10px 20px; /* Espaçamento interno do botão 
+  border-radius: 10px; /* Borda arredondada 
+  text-decoration: none; /* Remove o sublinhado padrão dos links 
+}
+
+img {
+  float: RIGHT; /* Alinha a imagem à esquerda do texto 
+  width: 300px; /* Define a largura da imagem 
+  margin-right: 10px; /* Adiciona um espaço entre a imagem e o texto 
+}
+
+*/
